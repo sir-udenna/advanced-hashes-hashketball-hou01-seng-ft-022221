@@ -190,7 +190,6 @@ end
 
 def big_shoe_rebounds
   players = game_hash[:home][:players].concat(game_hash[:away][:players])
-  #shoe_size = game_hash[:home][:players][:shoe].concat(game_hash[:away][:players][:shoe])
   players.each do |inner_value|
     if inner_value[:shoe] > 18
       return inner_value[:rebounds]
